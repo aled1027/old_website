@@ -20,7 +20,6 @@
 
   
     <div class="container">
-        <!--
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
@@ -28,55 +27,34 @@
             <li role="presentation" class="active"><a href="#">Github</a></li>
           </ul>
         </nav>
-         <h3 class="text-muted">Something here that's note my name. A picture?</h3>
+         <h3 class="text-muted">Alex Ledger</h3>
       </div>
-      -->
 
-<div class="row">
-    <div class="col-lg-4 my-picture">
-         <img src="my_pic.jpg" alt="Alex Ledger" style="width:206px;height:274px;">
-    </div>
-
-    <div class="col-lg-8">
-        <div class="jumbotron">
-            <h1>Alex Ledger</h1>
-            <p class="lead"> 
-                A mathematician-computer scientist with an interesting in building the tools for and solving good problems
-                </p>
-            <p>
-                <a class="btn btn-lg btn-success" href="#" role="button">
-                    LinkedIn
-                </a>
-                <a class="btn btn-lg btn-success" href="#" role="button">
-                    Github
-                </a>
-                    <!--
-            <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="new-btn active"><a href="#">LinkedIn</a></li>
-                <li role="presentation" class="new-btn active"><a href="#">Github</a></li>
-            </ul>
-                <a class="btn btn-lg btn-success" href="#" role="button">
-                  -->
-                </p>
-        </div>
-    </div>
-</div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>
-              <a href="cryptography.html">Cryptography</a>
-          </h4>
-          <p> Researching methods to allow two untrusting parties to work together (MPC) and methods of maintaining privacy between client and servers (ORAM).</p>
+        <div class="col-lg-8">
+          <h2>
+              Oblivious RAM 
+          </h2>
+          <p>
+            Oblivious RAM (Random Access Memory) algorithms, otherwise known as ORAM algorithms, are cryptographyic algorithms designed to obscure a client's access patterns to a server.
+            Even if the client encrypts their data before sending it to the server, it turns that the manner in which the client accesses the data reveals a whole bunch of information about the data itself. 
+            Therefore it is imperative that in a world of "cloud servers" that we ensure that the server cannot learn any information from the access patterns. 
+            This is achieved by making the client's sequence of access patterns appear as if the client is accessing random parts of the data.
+            </br>
+            </br>
 
-          <h4><a href="bye">Artificial Life</a></h4>
-          <p> Employing network, graph, clustering, machine learning and other algorithms to examine the evolution of technology in the patents database </p>
+            Cryptographers have developed several good, efficient ORAM algorithms to data, but the algorithms have yet to be used in practice.
+            My research extended existing ORAM algorithms to be more suitable for practical applications by making them "externally verifiable". 
+            Externally verifiable means that a trusted third party can verify that the client and server are cooperating in their exchange of data.
+            ORAM protocols, by their nature, require a more complex interchange of messages and data between the client and server. 
+            My work ensures that both parties are exchanging messages approprately, and prevents either side from cheating. 
+            As a result of our research, ORAM protocols can now ensure proper behavior via escrow - that is, each side is guaranteed to face a monetary penalty if they attempt to cheat. 
+          </p>
 
-          <h4><a href="about">About and Contact Information</a></h4> 
-          <p></p>
-        </div>
+    </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <h4><a href="hi">Machine Learning</a></h4>
           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 

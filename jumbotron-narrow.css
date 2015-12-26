@@ -1,3 +1,9 @@
+
+.my-picture {
+    position: relative;
+    top: 50%;
+    transform: translateY(22%);
+}
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -51,6 +57,11 @@ body {
   font-size: 21px;
 }
 
+.new-btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
@@ -77,4 +88,5 @@ body {
     border-bottom: 0;
   }
 }
+
 
