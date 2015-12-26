@@ -1,9 +1,21 @@
 
+/*--------------------------*/
+/*---Begin My Additions-----*/
+/*--------------------------*/
+a:link {
+    text-decoration: none;
+}
+
 .my-picture {
     position: relative;
     top: 50%;
     transform: translateY(22%);
 }
+/*--------------------------*/
+/*---End My Additions-------*/
+/*--------------------------*/
+
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
