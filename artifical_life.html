@@ -53,6 +53,37 @@
             </br>
           </p>
 
+          <h2>
+              Cellular Automata and Machine Learning
+          </h2>
+            <p>
+            Jacob Menick and I teamed up to see if we could build a neural net which could predict Wolfram's cellular automata Rule 110. <a href="rule110.pdf">See our slides from our presentation.</a>
+            </br>
+            </br>
+            Rule 110 is a set of rules for a 1-dimensional cellular automata. Jacob and I built a neural net to try to predict what color a cell would be after so many iterations of rule 110. Our results were that only with a sufficient number of layers and neurons could a neural net predict the value of a cell. And that number was so high that we hypothesize the neural net was essentially simulating rule 110, as opposed to making a prediction. I believe that someone showed that rule 110 is a pseudorandom number generator, so it's good we weren't able to predict anything.
+            </p>
+
+
+          <h2>
+              Schelling's Model
+          </h2>
+          <p>
+          Below is an overview of my side project on Schelling's model. For a writeup with some nice graphs, <a href="schelling.pdf">see my paper.</a>
+          </br>
+          </br>
+            An interesting application of computer science ideas to society is Schelling's model. Schelling's model, developed by Schelling in the 1970s, examines segregation in society using 2-dimensional cellular automata.
+          </br>
+          </br>
+          Schelling started with an 8x8 checkerboard, and placed some white agents and some black agents onto some of the checkboard's cells, while leaving some of the cells empty. Schelling then stipulated that a white agent is happy if and only if half of its neighbors are also white, and a black agent is happy if and only if at least a third of its neighbors are also black, where neighbors are the agents in the 3x3 square surrounding the agent. Schelling randomly selected an unhappy agent, and moved the agent to the nearest cell where they would be happy. Schelling continued this process for a while, or until every agent was happy. What slowly emerges is segregation between the two types of agents: there are pockets of white agents and pockets of black agents, and few diverse pockets. The segregation turns out to be extremely robust. No matter how the intial conditions are set, segregation occurs. 
+          </br>
+          </br>
+          I was interested in what feature of Schelling's model contributes to the segregation. Is the it fact that agents move to the nearest cell that makes them happy? Is the segregation robust enough to occur for a variety of moving procedures (i.e. moving the agent in different ways than teleportation to the nearest happy cell)? So I whipped up an implementation of Schelling's model in python, and did some analysis.
+          </br>
+          </br>
+          My results were that Schelling's model exhibits segregation regardless of the moving procedure. Even if the agents move to a random square if they are unhappy (regardless of whether it's a happy square), segregation still always emerges. The core contributor to segregation is the simple fact that agents are unhappy with their position, and do something about it (i.e. move).
+          </br>
+          </br>
+          An interesting result from a recent sociology paper is that white families tend to move because of a change in family dynamics, like a child moving away to college, good schools or a new job. On the other hand, black families tend to move in reaction to external stimuli, like increasing rent, changing urban policy, and property acquisition. In summary, white families move for internal, self-created reasons, and black families move in reaction to events (<a href="http://www.law.nyu.edu/sites/default/files/ECM_PRO_074751.pdf">reference</a>).
     </div>
 
     <!--
